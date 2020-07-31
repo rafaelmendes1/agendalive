@@ -9,13 +9,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class LiveDocument {
 
 	@Id
-	private String id;
-	private String liveName;
-	private String channelName;
-	private String link;
-	private LocalDateTime liveDate;
-	private LocalDateTime registrationDate;
-	
+    private String id;
+    private String liveName;
+    private String channelName;
+    private String liveLink;
+    private LocalDateTime liveDate;
+    private LocalDateTime registrationDate;
+    
 	public String getId() {
 		return id;
 	}
@@ -34,11 +34,11 @@ public class LiveDocument {
 	public void setChannelName(String channelName) {
 		this.channelName = channelName;
 	}
-	public String getLink() {
-		return link;
+	public String getLiveLink() {
+		return liveLink;
 	}
-	public void setLink(String link) {
-		this.link = link;
+	public void setLiveLink(String liveLink) {
+		this.liveLink = liveLink;
 	}
 	public LocalDateTime getLiveDate() {
 		return liveDate;
@@ -52,5 +52,5 @@ public class LiveDocument {
 	public void setRegistrationDate(LocalDateTime registrationDate) {
 		this.registrationDate = registrationDate;
 	}
-	
+
 }
